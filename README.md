@@ -46,6 +46,12 @@ export MLFLOW_TRACKING_PASSWORD=<>
 
 ## 2. Create IAM user for deployment
 
+	#Policy:
+
+	1. AmazonEC2ContainerRegistryFullAccess
+
+	2. AmazonEC2FullAccess
+
 	#with specific access
 
 	1. EC2 access : It is virtual machine
@@ -65,15 +71,11 @@ export MLFLOW_TRACKING_PASSWORD=<>
 
 	5. Lauch your docker image in EC2
 
-	#Policy:
 
-	1. AmazonEC2ContainerRegistryFullAccess
-
-	2. AmazonEC2FullAccess
 
 	
 ## 3. Create ECR repo to store/save docker image
-    - Save the URI: 741655300158.dkr.ecr.us-east-1.amazonaws.com/mlproj
+    - Save the URI: 741655300158.dkr.ecr.ap-south-1.amazonaws.com/mlproj
 
 	
 ## 4. Create EC2 machine (Ubuntu) 
